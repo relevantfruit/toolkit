@@ -7,7 +7,7 @@ public struct ErrorObject {
     let errorTitle: String
     let errorDescription: String
     
-    enum WarningType {
+    public enum WarningType {
         case error, warning, success
     }
 }
