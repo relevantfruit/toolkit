@@ -29,7 +29,7 @@ public final class EmptyView: UIView {
     private var defaultDescriptionColor: UIColor = .white
     
     // MARK: - Initialization
-    init(with font: UIFont, imageSize: Int = 100, titleColor: UIColor = .black, descriptionColor: UIColor = .white) {
+    public init(with font: UIFont, imageSize: Int = 100, titleColor: UIColor = .black, descriptionColor: UIColor = .white) {
         defaultFont = font
         defaultImageSize = 100
         defaultTitleColor = titleColor
@@ -40,7 +40,8 @@ public final class EmptyView: UIView {
         addSubview(stackView)
         
         stackView.snp.makeConstraints { make in
-            make.leading.trailing.equalToSuperview().inset(UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15))
+            make.leading.trailing.equalToSuperview()
+                .inset(UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15))
             make.center.equalToSuperview()
         }
         
@@ -54,7 +55,7 @@ public final class EmptyView: UIView {
 
 // MARK: - Populate UI
 public extension EmptyView {
-    func populate(with datasource: EmptyViewDatasource) {
+    public func populate(with datasource: EmptyViewDatasource) {
         emptyImageView.image = datasource.image
         emptyImageView.isHidden = datasource.image == nil
         
