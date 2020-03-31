@@ -10,6 +10,12 @@ public struct ErrorObject {
     public enum WarningType {
         case error, warning, success
     }
+    
+    public init(warningType: WarningType, errorTitle: String, errorDescription: String) {
+        self.warningType = warningType
+        self.errorTitle = errorTitle
+        self.errorDescription = errorDescription
+    }
 }
 
 public protocol ErrorHandler {
