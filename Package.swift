@@ -18,7 +18,7 @@ let package = Package(
         .package(url: "https://github.com/SnapKit/SnapKit", from: "5.0.1"),
         .package(url: "https://github.com/airbnb/lottie-ios", from: "3.1.5"),
         .package(url: "https://github.com/devicekit/DeviceKit", from: "2.3.0"),
-        .package(url: "https://github.com/evgenyneu/keychain-swift", from: "18.0.0"),
+        .package(url: "https://github.com/evgenyneu/keychain-swift", from: "19.0.0"),
         .package(url: "https://github.com/bizz84/SwiftyStoreKit", from: "0.15.0"),
         .package(url: "https://github.com/marmelroy/Localize-Swift", from: "3.1.0"),
         .package(url: "https://github.com/huri000/SwiftEntryKit", from: "1.2.3"),
