@@ -8,7 +8,7 @@
 import UIKit
 
 public class RoundImageView: UIImageView {
-  override func layoutSubviews() {
+  public override func layoutSubviews() {
     super.layoutSubviews()
     self.layer.cornerRadius = self.bounds.size.width / 2.0
     self.layer.masksToBounds = true

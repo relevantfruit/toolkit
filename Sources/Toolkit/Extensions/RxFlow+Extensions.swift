@@ -10,12 +10,12 @@ import Reusable
 
 public protocol ServicesViewModel: ViewModel {
   associatedtype Services
-  public var services: Services! { get set }
+  var services: Services! { get set }
 }
 
 public protocol ViewModelBased: class {
   associatedtype ViewModelType: ViewModel
-  public var viewModel: ViewModelType! { get set }
+  var viewModel: ViewModelType! { get set }
 }
 
 extension ViewModelBased where Self: UIViewController {
