@@ -1,12 +1,11 @@
 //
-//  RxFlow+Extensions.swift
+//  ServicesViewModel.swift
 //  
 //
 //  Created by yagiz on 4/11/20.
 //
 
 import UIKit
-import Reusable
 
 public protocol ServicesViewModel: ViewModel {
   associatedtype Services

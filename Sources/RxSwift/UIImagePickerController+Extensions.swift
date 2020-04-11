@@ -5,7 +5,7 @@
 //  Created by yagiz on 4/11/20.
 //
 
-#if os(iOS)
+#if canImport(RxCocoa) && canImport(RxSwift)
 import RxSwift
 import RxCocoa
 import UIKit
@@ -31,7 +31,6 @@ extension Reactive where Base: UIImagePickerController {
       .map {_ in () }
   }
 }
-#endif
 
 private func castOrThrow<T>(_ resultType: T.Type, _ object: Any) throws -> T {
   guard let returnValue = object as? T else {
@@ -40,12 +39,6 @@ private func castOrThrow<T>(_ resultType: T.Type, _ object: Any) throws -> T {
   
   return returnValue
 }
-
-#if os(iOS)
-
-import RxSwift
-import RxCocoa
-import UIKit
 
 open class RxImagePickerDelegateProxy
 : RxNavigationControllerDelegateProxy, UIImagePickerControllerDelegate {
