@@ -11,7 +11,7 @@ let package = Package(
   ],
   products: [
     .library(name: "Toolkit", targets: ["Toolkit"]),
-    .library(name: "ToolkitRxSwift", targets: ["ToolkitRxSwift"])
+    .library(name: "ToolkitRxSwift", type: .dynamic, targets: ["ToolkitRxSwift"])
   ],
   dependencies: [
     .package(url: "https://github.com/SnapKit/SnapKit", from: "5.0.1"),
@@ -30,7 +30,7 @@ let package = Package(
       dependencies: ["SnapKit", "Lottie", "DeviceKit", "KeychainSwift", "SwiftyStoreKit", "Localize_Swift", "SwiftEntryKit", "Reusable"], path: "Sources", exclude: ["RxSwift"]),
     .target(
       name: "ToolkitRxSwift",
-      dependencies: ["RxMoya-ModelMapper"], path: "Sources", sources: ["RxSwift"])
+      dependencies: ["Toolkit", "RxMoya-ModelMapper"], path: "Sources", sources: ["RxSwift"])
   ],
   swiftLanguageVersions: [.v5]
 )
