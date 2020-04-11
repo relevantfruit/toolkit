@@ -5,7 +5,7 @@
 //  Created by yagiz on 4/11/20.
 //
 
-#if canImport(RxCocoa) && canImport(RxSwift)
+#if canImport(RxCocoa) && canImport(RxSwift) && canImport(RxCocoaRuntime)
 import RxSwift
 import RxCocoa
 import UIKit
