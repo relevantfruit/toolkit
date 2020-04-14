@@ -7,11 +7,13 @@ let package = Package(
   name: "Toolkit",
   platforms: [
     .macOS(.v10_12),
-    .iOS(.v12), .tvOS(.v10), .watchOS(.v3)
+    .iOS(.v12),
+    .tvOS(.v10),
+    .watchOS(.v3)
   ],
   products: [
     .library(name: "Toolkit", targets: ["Toolkit"]),
-    .library(name: "ToolkitRxSwift", targets: ["ToolkitRxSwift"])
+    .library(name: "ToolkitRxSwift", type: .dynamic, targets: ["ToolkitRxSwift"])
   ],
   dependencies: [
     .package(url: "https://github.com/SnapKit/SnapKit", from: "5.0.1"),
@@ -21,19 +23,27 @@ let package = Package(
     .package(url: "https://github.com/bizz84/SwiftyStoreKit", from: "0.15.0"),
     .package(url: "https://github.com/marmelroy/Localize-Swift", from: "3.1.0"),
     .package(url: "https://github.com/sunshinejr/Moya-ModelMapper", .branch("master")),
-    .package(url: "https://github.com/AliSoftware/Reusable", from: "4.1.1")
+    .package(url: "https://github.com/AliSoftware/Reusable", from: "4.1.1"),
+    .package(url: "https://github.com/ashleymills/Reachability.swift", from: "5.0.0")
   ],
   targets: [
     .target(
       name: "Toolkit",
       dependencies: [
-        "SnapKit", "Lottie", "DeviceKit", "KeychainSwift", "SwiftyStoreKit", "Localize_Swift", "Reusable"
+        "SnapKit",
+        "Lottie",
+        "DeviceKit",
+        "KeychainSwift",
+        "SwiftyStoreKit",
+        "Localize_Swift",
+        "Reusable",
+        "Reachability"
       ],
       path: "Sources",
       exclude: ["RxSwift"]),
     .target(
       name: "ToolkitRxSwift",
-      dependencies: ["RxMoya-ModelMapper"],
+      dependencies: ["RxMoya-ModelMapper", "Toolkit"],
       path: "Sources",
       sources: ["RxSwift"])
   ],
