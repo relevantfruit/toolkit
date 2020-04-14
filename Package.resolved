@@ -101,6 +101,15 @@
         }
       },
       {
+        "package": "RxFlow",
+        "repositoryURL": "https://github.com/rxswiftcommunity/rxflow",
+        "state": {
+          "branch": null,
+          "revision": "16e63a1d10f1e9de2393d4ec984deb5f53a9e8ee",
+          "version": "2.7.0"
+        }
+      },
+      {
         "package": "RxSwift",
         "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
         "state": {

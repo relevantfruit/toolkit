@@ -8,7 +8,6 @@
 #if canImport(RxSwift)
 import RxSwift
 import Reachability
-import Foundation
 
 import class Dispatch.DispatchQueue
 
