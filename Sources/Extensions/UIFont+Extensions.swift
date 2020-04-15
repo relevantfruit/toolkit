@@ -5,7 +5,7 @@
 //  Created by yagiz on 4/15/20.
 //
 
-import UIFont
+import UIKit
 
 extension UIFont {
   func sizeOfString (string: String, constrainedToWidth width: Double) -> CGSize {
