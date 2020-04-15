@@ -10,20 +10,29 @@ import RxSwift
 import RxCocoa
 import SnapKit
 
-extension Reactive where Base: UIViewController {
-  var showLoading: Binder<Bool> {
+public protocol LoadableView where Self: UIView {
+  func startAnimation()
+  init()
+}
+
+public protocol LoadableController {
+  var LoadingViewType: LoadableView.Type { get }
+}
+
+extension Reactive where Base: UIViewController, Base: LoadableController {
+  public var showLoading: Binder<Bool> {
     return Binder(base, binding: { (target, isLoading) in
       if isLoading {
-        let loadingView = LoadingView()
+        if target.view.subviews.contains(where: { $0 is LoadableView }) { return }
+        let loadingView = target.loadingView.init()
         target.view.addSubview(loadingView)
         loadingView.snp.makeConstraints { $0.edges.equalTo(target.view) }
-        loadingView.start()
+        loadingView.startAnimation()
       } else {
         target.view.subviews
-          .filter { $0 is LoadingView }
+          .filter { $0 is LoadableView }
           .forEach { $0.removeFromSuperview() }
       }
     })
   }
 }
-
