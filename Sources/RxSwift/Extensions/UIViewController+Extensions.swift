@@ -19,8 +19,8 @@ public protocol LoadableController {
   var LoadingViewType: LoadableView.Type { get }
 }
 
-extension Reactive where Base: UIViewController, Base: LoadableController {
-  public var showLoading: Binder<Bool> {
+public extension Reactive where Base: UIViewController, Base: LoadableController {
+  var showLoading: Binder<Bool> {
     return Binder(base, binding: { (target, isLoading) in
       if isLoading {
         if target.view.subviews.contains(where: { $0 is LoadableView }) { return }

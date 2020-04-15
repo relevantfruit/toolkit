@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-extension UIButton {
-  public static func create(numberOfLines: Int? = 0,
+public extension UIButton {
+  static func create(numberOfLines: Int? = 0,
                             horizontalAlignment: UIControl.ContentHorizontalAlignment = .center,
                             verticalAlignment: UIControl.ContentVerticalAlignment = .center,
                             backgroundColor: UIColor? = .clear,

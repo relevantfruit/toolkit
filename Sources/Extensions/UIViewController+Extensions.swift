@@ -7,8 +7,8 @@
 
 import UIKit
 
-extension UIViewController {
-  public func configureNavBar(with title: String, prefersLargeTitle: Bool = true) {
+public extension UIViewController {
+  func configureNavBar(with title: String, prefersLargeTitle: Bool = true) {
     navigationItem.title = title
     if #available(iOS 11.0, *) {
       if prefersLargeTitle {

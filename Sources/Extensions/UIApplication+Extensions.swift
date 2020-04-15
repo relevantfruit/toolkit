@@ -7,8 +7,8 @@
 
 import UIKit
 
-extension UIApplication {
-  public class var mainWindow: UIWindow {
+public extension UIApplication {
+  class var mainWindow: UIWindow {
     return self.shared.keyWindow ?? UIWindow()
   }
 }

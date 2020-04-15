@@ -11,7 +11,7 @@ import UIKit
 import SnapKit
 
 public extension UIView {
-  static func container(_ insertedView: UIView,
+  public static func container(_ insertedView: UIView,
                                centerHorizontally: Bool = false,
                                centerVertically: Bool = false,
                                insets: UIEdgeInsets = .init()) -> UIView {

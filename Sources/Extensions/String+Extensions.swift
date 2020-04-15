@@ -7,8 +7,8 @@
 
 import UIKit
 
-extension String {
-  public func replaceLastOccurance(_ searchString: String,
+public extension String {
+  func replaceLastOccurance(_ searchString: String,
                                    with replacementString: String,
                                    caseInsensitive: Bool = true) -> String {
     let options: String.CompareOptions
@@ -28,7 +28,7 @@ extension String {
     return self
   }
   
-  public func replaceFirstOccurance(target: String, withString replaceString: String) -> String {
+  func replaceFirstOccurance(target: String, withString replaceString: String) -> String {
     if let range = self.range(of: target) {
       return self.replacingCharacters(in: range, with: replaceString)
     }

@@ -10,11 +10,11 @@ import RxSwift
 import RxCocoa
 import UIKit
 
-extension Reactive where Base: UIImagePickerController {
+public extension Reactive where Base: UIImagePickerController {
   /**
    Reactive wrapper for `delegate` message.
    */
-  public var didFinishPickingMediaWithInfo: Observable<[UIImagePickerController.InfoKey: Any]> {
+  var didFinishPickingMediaWithInfo: Observable<[UIImagePickerController.InfoKey: Any]> {
     return delegate
       .methodInvoked(#selector(UIImagePickerControllerDelegate.imagePickerController(_:didFinishPickingMediaWithInfo:)))
       .map({ (a) in
@@ -25,7 +25,7 @@ extension Reactive where Base: UIImagePickerController {
   /**
    Reactive wrapper for `delegate` message.
    */
-  public var didCancel: Observable<()> {
+  var didCancel: Observable<()> {
     return delegate
       .methodInvoked(#selector(UIImagePickerControllerDelegate.imagePickerControllerDidCancel(_:)))
       .map {_ in () }
@@ -40,8 +40,7 @@ private func castOrThrow<T>(_ resultType: T.Type, _ object: Any) throws -> T {
   return returnValue
 }
 
-open class RxImagePickerDelegateProxy
-: RxNavigationControllerDelegateProxy, UIImagePickerControllerDelegate {
+open class RxImagePickerDelegateProxy: RxNavigationControllerDelegateProxy, UIImagePickerControllerDelegate {
   
   public init(imagePicker: UIImagePickerController) {
     super.init(navigationController: imagePicker)

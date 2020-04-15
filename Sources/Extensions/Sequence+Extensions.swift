@@ -7,8 +7,8 @@
 
 import Foundation
 
-extension Sequence where Element: AdditiveArithmetic {
-  public func sum() -> Element {
+public extension Sequence where Element: AdditiveArithmetic {
+  func sum() -> Element {
     return reduce(.zero, +)
   }
 }

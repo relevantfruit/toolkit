@@ -7,8 +7,8 @@
 
 import Foundation
 
-extension Array {
-  public func at(index: Int) -> Element? {
+public extension Array {
+  func at(index: Int) -> Element? {
     if index < 0 || index > self.count - 1 {
       return nil
     }
