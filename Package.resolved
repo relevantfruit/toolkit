@@ -92,6 +92,24 @@
         }
       },
       {
+        "package": "Realm",
+        "repositoryURL": "https://github.com/realm/realm-cocoa.git",
+        "state": {
+          "branch": null,
+          "revision": "07734d6ee4b49b5656c51dab51c20a2d59b9de45",
+          "version": "4.4.0"
+        }
+      },
+      {
+        "package": "RealmCore",
+        "repositoryURL": "https://github.com/realm/realm-core",
+        "state": {
+          "branch": null,
+          "revision": "35662ff940e340bf630ad1d1d88acfc7af18bee6",
+          "version": "5.23.8"
+        }
+      },
+      {
         "package": "Reusable",
         "repositoryURL": "https://github.com/AliSoftware/Reusable",
         "state": {
@@ -107,6 +125,15 @@
           "branch": null,
           "revision": "16e63a1d10f1e9de2393d4ec984deb5f53a9e8ee",
           "version": "2.7.0"
+        }
+      },
+      {
+        "package": "RxRealm",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/RxRealm",
+        "state": {
+          "branch": null,
+          "revision": "70188d79fe2eb19b5013dd1deae33e9e53f10e76",
+          "version": "2.0.0"
         }
       },
       {
