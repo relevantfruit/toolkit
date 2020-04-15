@@ -24,7 +24,7 @@ extension Reactive where Base: UIViewController, Base: LoadableController {
     return Binder(base, binding: { (target, isLoading) in
       if isLoading {
         if target.view.subviews.contains(where: { $0 is LoadableView }) { return }
-        let loadingView = target.loadingView.init()
+        let loadingView = target.LoadingViewType.init()
         target.view.addSubview(loadingView)
         loadingView.snp.makeConstraints { $0.edges.equalTo(target.view) }
         loadingView.startAnimation()
