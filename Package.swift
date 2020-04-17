@@ -6,7 +6,8 @@ import PackageDescription
 let rxDependencies: [Package.Dependency] = [
   .package(url: "https://github.com/rxswiftcommunity/rxflow", from: "2.7.0"),
   .package(url: "https://github.com/sunshinejr/Moya-ModelMapper", .branch("master")),
-  .package(url: "https://github.com/RxSwiftCommunity/RxRealm", from: "2.0.0")
+  .package(url: "https://github.com/RxSwiftCommunity/RxRealm", from: "2.0.0"),
+  .package(url: "https://github.com/RxSwiftCommunity/RxDataSources", from: "4.0.1")
 ]
 
 let package = Package(
@@ -48,7 +49,7 @@ let package = Package(
       exclude: ["RxSwift"]),
     .target(
       name: "ToolkitRxSwift",
-      dependencies: ["Toolkit", "RxMoya-ModelMapper", "RxFlow", "RxRealm"],
+      dependencies: ["Toolkit", "RxMoya-ModelMapper", "RxFlow", "RxRealm", "RxDataSources"],
       path: "Sources",
       sources: ["RxSwift"])
   ],
