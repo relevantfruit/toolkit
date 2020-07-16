@@ -5,7 +5,7 @@ import PackageDescription
 
 let rxDependencies: [Package.Dependency] = [
   .package(url: "https://github.com/rxswiftcommunity/rxflow", from: "2.7.0"),
-  .package(url: "https://github.com/sunshinejr/Moya-ModelMapper", .branch("master")),
+  .package(url: "https://github.com/sunshinejr/Moya-ModelMapper", from: "10.0.0"),
   .package(url: "https://github.com/RxSwiftCommunity/RxRealm", from: "2.0.0"),
   .package(url: "https://github.com/RxSwiftCommunity/RxDataSources", from: "4.0.1"),
   .package(url: "https://github.com/RxSwiftCommunity/RxGesture", from: "3.0.3")
@@ -14,7 +14,6 @@ let rxDependencies: [Package.Dependency] = [
 let package = Package(
   name: "Toolkit",
   platforms: [
-    .macOS(.v10_12),
     .iOS(.v12),
     .tvOS(.v10),
     .watchOS(.v3)

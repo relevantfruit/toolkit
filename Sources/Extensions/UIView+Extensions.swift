@@ -11,10 +11,12 @@ import UIKit
 import SnapKit
 
 public extension UIView {
-  public static func container(_ insertedView: UIView,
-                               centerHorizontally: Bool = false,
-                               centerVertically: Bool = false,
-                               insets: UIEdgeInsets = .init()) -> UIView {
+  
+  static func container(_ insertedView: UIView,
+                        centerHorizontally: Bool = false,
+                        centerVertically: Bool = false,
+                        insets: UIEdgeInsets = .init()) -> UIView {
+    
     let view = UIView()
     view.addSubview(insertedView)
     insertedView.snp.makeConstraints {

@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class PaddingLabel: UILabel {
+public final class PaddingLabel: UILabel {
   private struct AssociatedKeys {
     static var padding = UIEdgeInsets()
   }
@@ -23,7 +23,7 @@ public class PaddingLabel: UILabel {
     }
   }
   
-  override open func draw(_ rect: CGRect) {
+  public override func draw(_ rect: CGRect) {
     if let insets = padding {
       self.drawText(in: rect.inset(by: insets))
     } else {
@@ -31,7 +31,7 @@ public class PaddingLabel: UILabel {
     }
   }
   
-  override open var intrinsicContentSize: CGSize {
+  public override var intrinsicContentSize: CGSize {
     guard let text = self.text else { return super.intrinsicContentSize }
     
     var contentSize = super.intrinsicContentSize
@@ -45,9 +45,11 @@ public class PaddingLabel: UILabel {
       textWidth -= insetsWidth
     }
     
+    let customFont: UIFont = font ?? .systemFont(ofSize: 16, weight: .regular)
     let newSize = text.boundingRect(with: CGSize(width: textWidth, height: CGFloat.greatestFiniteMagnitude),
                                     options: NSStringDrawingOptions.usesLineFragmentOrigin,
-                                    attributes: [NSAttributedString.Key.font: self.font ?? UIFont.systemFont(ofSize: 16, weight: .regular)], context: nil)
+                                    attributes: [.font: customFont],
+                                    context: nil)
     
     contentSize.height = ceil(newSize.size.height) + insetsHeight
     contentSize.width = ceil(newSize.size.width) + insetsWidth

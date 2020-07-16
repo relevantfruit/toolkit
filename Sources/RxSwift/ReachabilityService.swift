@@ -35,7 +35,7 @@ public enum ReachabilityServiceError: Error {
   case failedToCreate
 }
 
-public class DefaultReachabilityService: HasReachabilityService {
+public final class DefaultReachabilityService: HasReachabilityService {
   private let _reachabilitySubject: BehaviorSubject<ReachabilityStatus>
   
   public var reachability: Observable<ReachabilityStatus> {

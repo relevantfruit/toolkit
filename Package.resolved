@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
           "branch": null,
-          "revision": "fca036f7aeca07124067cb6e0c12b0ad6359e3d4",
-          "version": "5.1.0"
+          "revision": "2777659076fda38bd4e487739ee331c7a65b5924",
+          "version": "5.2.1"
         }
       },
       {
@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/airbnb/lottie-ios",
         "state": {
           "branch": null,
-          "revision": "8f81de8d81da8631fd95ff81a9db133b76e13ea4",
-          "version": "3.1.6"
+          "revision": "4e5877425dae5c10792fc9d22d53dc6bf6824dc1",
+          "version": "3.1.8"
         }
       },
       {
@@ -68,9 +68,9 @@
         "package": "Moya-ModelMapper",
         "repositoryURL": "https://github.com/sunshinejr/Moya-ModelMapper",
         "state": {
-          "branch": "master",
+          "branch": null,
           "revision": "3f0b7d953bedd2c61570bec7110fb30b720f028b",
-          "version": null
+          "version": "10.0.0"
         }
       },
       {
@@ -96,8 +96,8 @@
         "repositoryURL": "https://github.com/realm/realm-cocoa.git",
         "state": {
           "branch": null,
-          "revision": "07734d6ee4b49b5656c51dab51c20a2d59b9de45",
-          "version": "4.4.0"
+          "revision": "fa43b8e2909334c79f233ce472332c136ca108da",
+          "version": "4.4.1"
         }
       },
       {
@@ -132,8 +132,8 @@
         "repositoryURL": "https://github.com/rxswiftcommunity/rxflow",
         "state": {
           "branch": null,
-          "revision": "16e63a1d10f1e9de2393d4ec984deb5f53a9e8ee",
-          "version": "2.7.0"
+          "revision": "31557fa4a216387134c93db14130dfc45574b67d",
+          "version": "2.9.0"
         }
       },
       {
@@ -177,8 +177,8 @@
         "repositoryURL": "https://github.com/bizz84/SwiftyStoreKit",
         "state": {
           "branch": null,
-          "revision": "6de7077c6cd15435c53d8ecfb1a09a371c83c4df",
-          "version": "0.15.1"
+          "revision": "a45217b2cf7c9bfea3139dc45afa06ca9cf6c4e6",
+          "version": "0.16.0"
         }
       }
     ]
