@@ -96,8 +96,8 @@
         "repositoryURL": "https://github.com/realm/realm-cocoa.git",
         "state": {
           "branch": null,
-          "revision": "fa43b8e2909334c79f233ce472332c136ca108da",
-          "version": "4.4.1"
+          "revision": "20091eb21fa0e72b031750a9df158e487b02defd",
+          "version": "5.3.0"
         }
       },
       {
@@ -105,8 +105,8 @@
         "repositoryURL": "https://github.com/realm/realm-core",
         "state": {
           "branch": null,
-          "revision": "35662ff940e340bf630ad1d1d88acfc7af18bee6",
-          "version": "5.23.8"
+          "revision": "38307ec3665c2bcd39bfe6425b598332ed87d69f",
+          "version": "6.0.9"
         }
       },
       {
@@ -150,8 +150,8 @@
         "repositoryURL": "https://github.com/RxSwiftCommunity/RxRealm",
         "state": {
           "branch": null,
-          "revision": "70188d79fe2eb19b5013dd1deae33e9e53f10e76",
-          "version": "2.0.0"
+          "revision": "4dcae40562b5a086dd4711fa8a596be0436dc474",
+          "version": "3.1.0"
         }
       },
       {

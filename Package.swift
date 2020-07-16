@@ -4,9 +4,9 @@
 import PackageDescription
 
 let rxDependencies: [Package.Dependency] = [
-  .package(url: "https://github.com/rxswiftcommunity/rxflow", from: "2.7.0"),
+  .package(url: "https://github.com/rxswiftcommunity/rxflow", from: "2.9.0"),
   .package(url: "https://github.com/sunshinejr/Moya-ModelMapper", from: "10.0.0"),
-  .package(url: "https://github.com/RxSwiftCommunity/RxRealm", from: "2.0.0"),
+  .package(url: "https://github.com/RxSwiftCommunity/RxRealm", from: "3.1.0"),
   .package(url: "https://github.com/RxSwiftCommunity/RxDataSources", from: "4.0.1"),
   .package(url: "https://github.com/RxSwiftCommunity/RxGesture", from: "3.0.3")
 ]
@@ -27,7 +27,7 @@ let package = Package(
     .package(url: "https://github.com/airbnb/lottie-ios", from: "3.1.5"),
     .package(url: "https://github.com/devicekit/DeviceKit", from: "2.3.0"),
     .package(url: "https://github.com/evgenyneu/keychain-swift", from: "19.0.0"),
-    .package(url: "https://github.com/bizz84/SwiftyStoreKit", from: "0.15.0"),
+    .package(url: "https://github.com/bizz84/SwiftyStoreKit", from: "0.16.0"),
     .package(url: "https://github.com/marmelroy/Localize-Swift", from: "3.1.0"),
     .package(url: "https://github.com/AliSoftware/Reusable", from: "4.1.1"),
     .package(url: "https://github.com/ashleymills/Reachability.swift", from: "5.0.0"),
