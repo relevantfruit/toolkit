@@ -53,5 +53,9 @@ public final class Keychain {
   public static func has(_ key: Credential.Key) -> Bool {
     return keychain.get(key.keyName) != nil
   }
+  
+  public static func clear() {
+    keychain.clear()
+  }
 }
 
