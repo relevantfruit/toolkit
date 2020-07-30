@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
           "branch": null,
-          "revision": "2777659076fda38bd4e487739ee331c7a65b5924",
-          "version": "5.2.1"
+          "revision": "becd9a729a37bdbef5bc39dc3c702b99f9e3d046",
+          "version": "5.2.2"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/devicekit/DeviceKit",
         "state": {
           "branch": null,
-          "revision": "4a1c9aa580ae1db763791015e119c4331c95ad02",
-          "version": "2.3.0"
+          "revision": "446e3ab022af7bb0058be74c1298e1f7e1615607",
+          "version": "3.2.0"
         }
       },
       {
@@ -51,8 +51,8 @@
         "repositoryURL": "https://github.com/lyft/mapper.git",
         "state": {
           "branch": null,
-          "revision": "877dc54e709058ba1698da1417dd1b92fcb4085d",
-          "version": "10.0.0"
+          "revision": "c8f848c8a496e8dbfafa4fba5bb44723bacbe853",
+          "version": "10.0.1"
         }
       },
       {
@@ -74,15 +74,6 @@
         }
       },
       {
-        "package": "Reachability",
-        "repositoryURL": "https://github.com/ashleymills/Reachability.swift",
-        "state": {
-          "branch": null,
-          "revision": "98e968e7b6c1318fb61df23e347bc319761e8acb",
-          "version": "5.0.0"
-        }
-      },
-      {
         "package": "ReactiveSwift",
         "repositoryURL": "https://github.com/Moya/ReactiveSwift.git",
         "state": {
@@ -96,8 +87,8 @@
         "repositoryURL": "https://github.com/realm/realm-cocoa.git",
         "state": {
           "branch": null,
-          "revision": "20091eb21fa0e72b031750a9df158e487b02defd",
-          "version": "5.3.0"
+          "revision": "5d296d8a3750ac86e731263b44e2ba0c3c85f2cb",
+          "version": "5.3.2"
         }
       },
       {
@@ -105,8 +96,8 @@
         "repositoryURL": "https://github.com/realm/realm-core",
         "state": {
           "branch": null,
-          "revision": "38307ec3665c2bcd39bfe6425b598332ed87d69f",
-          "version": "6.0.9"
+          "revision": "55a0d32516c0f3a5fd3ab8c0224ee22efcc7cd58",
+          "version": "6.0.12"
         }
       },
       {
@@ -116,15 +107,6 @@
           "branch": null,
           "revision": "86cd17aa27e80d20bfe2ea57dd08958cf64664f4",
           "version": "4.1.1"
-        }
-      },
-      {
-        "package": "RxDataSources",
-        "repositoryURL": "https://github.com/RxSwiftCommunity/RxDataSources",
-        "state": {
-          "branch": null,
-          "revision": "a18cee01c9ee55f04d0c7eb15c77a96c3648c88e",
-          "version": "4.0.1"
         }
       },
       {
@@ -177,8 +159,8 @@
         "repositoryURL": "https://github.com/bizz84/SwiftyStoreKit",
         "state": {
           "branch": null,
-          "revision": "a45217b2cf7c9bfea3139dc45afa06ca9cf6c4e6",
-          "version": "0.16.0"
+          "revision": "9974acf07b31b6f5bf363d5118dc1bd4fcac6122",
+          "version": "0.16.1"
         }
       }
     ]
