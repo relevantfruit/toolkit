@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/devicekit/DeviceKit",
         "state": {
           "branch": null,
-          "revision": "446e3ab022af7bb0058be74c1298e1f7e1615607",
-          "version": "3.2.0"
+          "revision": "dbddb0296e3ee4f83d52f9681e42705020a533e4",
+          "version": "4.2.1"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/marmelroy/Localize-Swift",
         "state": {
           "branch": null,
-          "revision": "f2d0c6d790b8af64ae54377ad93494e8d3e46b17",
-          "version": "3.1.0"
+          "revision": "0aa221fed0512772eaad04171d966b8d77b15212",
+          "version": "3.2.0"
         }
       },
       {
@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/airbnb/lottie-ios",
         "state": {
           "branch": null,
-          "revision": "4e5877425dae5c10792fc9d22d53dc6bf6824dc1",
-          "version": "3.1.8"
+          "revision": "e02e82c7c1b472e85e641a7624e99c855e21add1",
+          "version": "3.1.9"
         }
       },
       {
@@ -114,8 +114,8 @@
         "repositoryURL": "https://github.com/rxswiftcommunity/rxflow",
         "state": {
           "branch": null,
-          "revision": "31557fa4a216387134c93db14130dfc45574b67d",
-          "version": "2.9.0"
+          "revision": "ccf32fd783f948a575fe89749f43e81ddc59e11f",
+          "version": "2.11.0"
         }
       },
       {
